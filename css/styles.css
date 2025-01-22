@@ -46,7 +46,7 @@ header div {
     align-items: center;
 }
 
-header img {
+.logo img {
     margin-right: 10px;
 }
 
@@ -55,6 +55,12 @@ header h1 {
     font-weight: bold;
     color: white;
     margin: 0;
+    gap: 40px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
 }
 
 /* Navigation principale */
