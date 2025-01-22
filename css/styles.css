@@ -1,5 +1,206 @@
+/* Base */
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
 .wrapper {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    background-color: #f26c25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Navigation principale */
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Bannière */
+
+.banniere {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    background-color: #eeeeee;
+}
+
+.banniere h2 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+/* Section */
+
+.titre-transport {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #eeeeee;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    border: 1px solid #d0d0d0;
+}
+
+.titre-transport h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.titre-transport img {
+    margin-right: 20px;
+}
+
+.conteneur-transport {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+article h3 {
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+article p {
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #171717;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .wrapper h4 {
+    margin: 0;
+    color: white;
+}
+
+footer .wrapper ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+footer .wrapper ul li {
+    margin-left: 20px;
+}
+
+footer .wrapper ul li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+/* Média Sociaux */
+
+.facebook a {
+    background-image: url("../images/facebook-nb.png");
+}
+
+.facebook a:hover {
+    background-image: url("../images/facebook-survol.png");
+}
+
+.twitter a:hover {
+    background-image: url("../images/twitter-survol.png");
+}
+
+.twitter a {
+    background-image: url("../images/twitter-nb.png");
+}
+
+.pinterest a:hover {
+    background-image: url("../images/pinterest-survol.png");
+}
+
+.pinterest a {
+    background-image: url("../images/pinterest-nb.png");
+}
+
+.linkedin a {
+    background-image: url("../images/linkedin-nb.png");
+}
+
+.linkedin a:hover {
+    background-image: url("../images/linkedin-survol.png");
+}
+
+/* Aide Stylistique */
+
+.conteneur-transport-invisible {
+    visibility: hidden;
+}
+
+.conteneur-transport-visible {
+    visibility: visible;
 }
